@@ -42,11 +42,11 @@ export default class UserList extends Component {
                                                 <p className="crd__name">{person.Name}</p>
                                                 <div className="grd-container">
 
-                                                    <div className="grid-child-posts">
+                                                    <div className="grd-child">
                                                         156 Post
                                                     </div>
 
-                                                    <div className="grid-child-followers">
+                                                    <div className="grd-child">
                                                         1012 Likes
                                                     </div>
 

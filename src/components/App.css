@@ -47,6 +47,14 @@
     color: white;
 }
 
+.grd-container {
+    display: inline-flex;
+}
+
+.grd-child {
+    padding: 0 10px;
+}
+
 .crd__name {
     margin-top: 15px;
     font-size: 1.5em;
