@@ -6,18 +6,22 @@ export default class UserCreate extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            Users: []
+            Name: null,
+            Email: null,
+            Phone: null,
+            Address: null,
+            Avtar: null
         }
     }
     create() {
-        fetch('https://638459b43fa7acb14ff21d21.mockapi.io/api/v-1/Users', {
+        fetch('http://localhost:3000/users', {
             method: "POST",
             headers: {
-                'Content- type': 'application/json'
+                'content-Type': 'application/json',
             },
             body: JSON.stringify(this.state)
-        }).then((response) => {
-            response.json().then((result) => {
+        }).then((res) => {
+            res.json().then((result) => {
                 console.log(result);
             })
 
@@ -26,6 +30,7 @@ export default class UserCreate extends Component {
     render() {
         console.log(this.state);
         return (
+
             <> <div className='dv-elemt'>
                 <form className="form">
                     <div className="title">Welcome</div>
@@ -51,7 +56,7 @@ export default class UserCreate extends Component {
                         <div className="cut"></div>
                         <label htmlFor="address" className="placeholder2">Address</label>
                     </div>
-                    <button type="text" className="submit" onClick={() => this.create()}>Click Here</button>
+                    <button className="submit" onClick={() => this.create()}>Click Here</button>
                 </form >
             </div>
             </>

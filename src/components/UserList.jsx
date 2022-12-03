@@ -17,7 +17,7 @@ export default class UserList extends Component {
         }
     }
     componentDidMount() {
-        fetch('https://638459b43fa7acb14ff21d21.mockapi.io/api/v-1/Users').then((response) => {
+        fetch('http://localhost:3000/users').then((response) => {
             response.json().then((result) => {
                 // console.table(result);
                 this.setState({ user: result })
