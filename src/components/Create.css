@@ -79,7 +79,7 @@
     transform: translateY(8px);
 }
 
-.placeholder {
+.placeholder2 {
     color: white;
     font-family: sans-serif;
     left: 20px;
@@ -91,16 +91,16 @@
     top: 20px;
 }
 
-.input:focus~.placeholder,
-.input:not(:placeholder-shown)~.placeholder {
+.input:focus~.placeholder2,
+.input:not(:placeholder-shown)~.placeholder2 {
     transform: translateY(-30px) translateX(10px) scale(0.75);
 }
 
-.input:not(:placeholder-shown)~.placeholder {
+.input:not(:placeholder-shown)~.placeholder2 {
     color: #808097;
 }
 
-.input:focus~.placeholder {
+.input:focus~.placeholder2 {
     color: #dc2f55;
 }
 

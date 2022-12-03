@@ -6,27 +6,27 @@ export default class UserCreate extends Component {
     render() {
         return (
             <> <div className='dv-elemt'>
-                <div class="form">
-                    <div class="title">Welcome</div>
-                    <div class="subtitle">Let's create your account!</div>
-                    <div class="input-container ic1">
-                        <input id="firstname" class="input" type="text" placeholder=" " />
-                        <div class="cut"></div>
-                        <label for="firstname" class="placeholder">First name</label>
+                <div className="form">
+                    <div className="title">Welcome</div>
+                    <div className="subtitle">Let's create your account!</div>
+                    <div className="input-container ic1">
+                        <input id="firstname" className="input" type="text" placeholder=" " />
+                        <div className="cut"></div>
+                        <label htmlFor="firstname" className="placeholder2">First name</label>
                     </div>
-                    <div class="input-container ic2">
-                        <input id="lastname" class="input" type="text" placeholder=" " />
-                        <div class="cut"></div>
-                        <label for="lastname" class="placeholder">Last name</label>
+                    <div className="input-container ic2">
+                        <input id="lastname" className="input" type="text" placeholder=" " />
+                        <div className="cut"></div>
+                        <label htmlFor="lastname" className="placeholder2">Last name</label>
                     </div>
-                    <div class="input-container ic2">
-                        <input id="email" class="input" type="text" placeholder=" " />
-                        <div class="cut cut-short"></div>
-                        <label for="email" class="placeholder">Email</label>
+                    <div className="input-container ic2">
+                        <input id="email" className="input" type="text" placeholder=" " />
+                        <div className="cut cut-short"></div>
+                        <label htmlFor="email" className="placeholder2">Email</label>
                     </div>
-                    <button type="text" class="submit">submit</button>
-                </div>
-            </div>
+                    <button type="text" className="submit">submit</button>
+                </div >
+            </div >
             </>
         )
     }
