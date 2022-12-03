@@ -13,7 +13,7 @@ export default class UserList extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            user: []
+            Users: []
         }
     }
     componentDidMount() {
