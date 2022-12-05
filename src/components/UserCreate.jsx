@@ -14,10 +14,11 @@ export default class UserCreate extends Component {
         }
     }
     create() {
-        fetch('http://localhost:3000/users', {
+        fetch('https://638459b43fa7acb14ff21d21.mockapi.io/api/v-1/Users', {
             method: "POST",
             headers: {
                 'content-Type': 'application/json',
+                'API-Key': '638459b43fa7acb14ff21d21'
             },
             body: JSON.stringify(this.state)
         }).then((res) => {
